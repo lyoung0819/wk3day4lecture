@@ -64,3 +64,13 @@ class Blog:
             self.posts.append(new_post)
             print(f"{new_post.title} has been created!")
 
+    # Method to view all of the posts in the blog
+    def view_posts(self):
+        # Check if there are any posts first
+        if self.posts: # if true (meaning anything BUT zero)
+            # Loop through 
+            for post in self.posts:
+                # Print the post(and the __str__ method will format it for us)
+                print(post) # this is printing the post class which is formatted via the __str__ method
+        else:
+            print('There are currently no posts in this blog :(')

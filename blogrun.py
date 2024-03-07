@@ -24,6 +24,9 @@ def run_blog():
             elif to_do == '2':
                 # Call log in method on the blog
                 blog.log_user_in() 
+            elif to_do == '3':
+                # Call View Posts method
+                blog.view_posts()
             else:
                 print(f'Option {to_do} is coming soon.')
         else:
@@ -37,6 +40,9 @@ def run_blog():
             elif to_do == '2':
                 # Call the create_post method on the blog
                 blog.create_new_post()
+            elif to_do == '3':
+                # Call View Posts method
+                blog.view_posts()
             else:
                 print(f"Option {to_do} is coming soon.")
 
